@@ -43,7 +43,7 @@ jobs:
         if: ${{ steps.node_modules_cache_id.outputs.cache-hit != 'true' }}
         run: pnpm install
       - name: generate
-        run: pnpm run build
+        run: BASE_URL=/nakasyou.github.io-old/ pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
