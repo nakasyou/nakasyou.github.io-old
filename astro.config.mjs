@@ -13,4 +13,5 @@ export default defineConfig({
     sitemap(),
   ],
   site: 'https://nakasyou.github.io',
+  base: '/nakasyou.github.io-old'
 });
